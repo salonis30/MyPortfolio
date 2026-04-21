@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saloni Sharma | Portfolio</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        header p {
+            color: #94a3b8;
+            margin-top: 10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .btn-outline {
+            border: 1px solid #3b82f6;
+            color: #3b82f6;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3b82f6;
+            display: inline-block;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Saloni Sharma</h1>
+    <p>Data Analyst | Machine Learning Enthusiast</p>
+
+    <div class="buttons">
+        <a href="mailto:saloni30.work@gmail.com" class="btn-primary">Contact Me</a>
+        <a href="https://github.com/salonis30" target="_blank" class="btn-outline">GitHub</a>
+    </div>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a Data Analyst and Machine Learning enthusiast with hands-on experience working with real-world datasets. 
+        I specialize in data analysis, predictive modeling, and dashboard development using Python, Pandas, NumPy, and Streamlit.
+        <br><br>
+        I completed a Data Analyst Internship at Grras Solutions Pvt Ltd (June 2024 – September 2024), where I performed exploratory data analysis, built reports, and collaborated with teams.
+        <br><br>
+        I am actively seeking opportunities in Europe to grow in Data Science and Machine Learning.
+    </p>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Petroleum Production Prediction</h3>
+            <p>Machine Learning project using Linear Regression, Random Forest, XGBoost, and LSTM.</p>
+            <a href="https://github.com/salonis30/PredictingPetroleumAndGasProduction" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Walmart Data Analysis</h3>
+            <p>Analyzed Walmart dataset using Python, SQL, Excel, and Power BI to find business insights.</p>
+            <a href="https://github.com/salonis30/walmart" target="_blank">View Project →</a>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <p>
+        Python, SQL, Pandas, NumPy, Machine Learning, Data Visualization, Power BI, Excel, Database Management
+    </p>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: saloni30.work@gmail.com</p>
+    <p>India: +91 8000134845</p>
+    <p>Italy: +39 3933824256</p>
+</section>
+
+<footer>
+    <p>© 2026 Saloni Sharma</p>
+</footer>
+
+</body>
+</html>
