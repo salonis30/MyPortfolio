@@ -2,20 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saloni Sharma | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
         body {
-            background: #0f172a;
-            color: white;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #F5F5DC, #81717A, #9D8CA1);
+            color: black;
         }
 
         header {
@@ -23,75 +21,57 @@
             padding: 50px 20px;
         }
 
-        header h1 {
-            font-size: 40px;
+        img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
         }
 
-        header p {
-            color: #94a3b8;
-            margin-top: 10px;
+        h1 {
+            margin: 10px 0;
+            font-size: 32px;
         }
 
-        .buttons {
-            margin-top: 20px;
-        }
-
-        .buttons a {
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 5px;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: #3b82f6;
-            color: white;
-        }
-
-        .btn-outline {
-            border: 1px solid #3b82f6;
-            color: #3b82f6;
-        }
-
-        section {
-            padding: 40px;
-            max-width: 1000px;
+        p {
+            max-width: 700px;
             margin: auto;
+            font-size: 16px;
         }
 
-        h2 {
-            margin-bottom: 20px;
-            border-bottom: 2px solid #3b82f6;
+        .section {
+            background: #F5F5DC;
+            margin: 30px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .projects a {
+            display: block;
+            margin: 10px 0;
+            color: #81717A;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .projects a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
             display: inline-block;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card a {
-            color: #3b82f6;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #81717A;
+            color: white;
+            border-radius: 6px;
             text-decoration: none;
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            color: #94a3b8;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -99,63 +79,53 @@
 <body>
 
 <header>
+    <img src="profile.jpg" alt="Profile Photo">
     <h1>Saloni Sharma</h1>
-    <p>Data Analyst | Machine Learning Enthusiast</p>
+    <p>Data Analyst & Machine Learning Enthusiast</p>
 
-    <div class="buttons">
-        <a href="mailto:saloni30.work@gmail.com" class="btn-primary">Contact Me</a>
-        <a href="https://github.com/salonis30" target="_blank" class="btn-outline">GitHub</a>
-    </div>
+    <a class="btn" href="https://www.linkedin.com/in/saloni-sharma-27534b257" target="_blank">
+        🔗 LinkedIn Profile
+    </a>
 </header>
 
-<section>
+<div class="section">
     <h2>About Me</h2>
     <p>
-        I am a Data Analyst and Machine Learning enthusiast with hands-on experience working with real-world datasets. 
-        I specialize in data analysis, predictive modeling, and dashboard development using Python, Pandas, NumPy, and Streamlit.
-        <br><br>
-        I completed a Data Analyst Internship at Grras Solutions Pvt Ltd (June 2024 – September 2024), where I performed exploratory data analysis, built reports, and collaborated with teams.
-        <br><br>
-        I am actively seeking opportunities in Europe to grow in Data Science and Machine Learning.
-    </p>
-</section>
+        I am a Data Analyst and Machine Learning enthusiast with hands-on experience in working with real-world datasets. 
+        I enjoy analyzing data, building predictive models, and creating interactive dashboards using Python and tools like Pandas, NumPy, and Streamlit.
 
-<section>
+        I completed a Data Analyst Internship at Grras Solutions Pvt Ltd (June 2024 – September 2024), 
+        where I performed exploratory data analysis, created visualizations, and collaborated with teams.
+
+        I have worked on projects such as Walmart Data Analysis and Petroleum Production Prediction using multiple ML models.
+
+        I am actively looking for opportunities in Europe to grow in the field of Data Science and Machine Learning.
+    </p>
+</div>
+
+<div class="section projects">
     <h2>Projects</h2>
 
-    <div class="projects">
+    <a href="https://github.com/salonis30/PredictingPetroleumAndGasProduction" target="_blank">
+        🔹 Petroleum Production Prediction
+    </a>
 
-        <div class="card">
-            <h3>Petroleum Production Prediction</h3>
-            <p>Machine Learning project using Linear Regression, Random Forest, XGBoost, and LSTM.</p>
-            <a href="https://github.com/salonis30/PredictingPetroleumAndGasProduction" target="_blank">View Project →</a>
-        </div>
+    <a href="https://github.com/salonis30/walmart" target="_blank">
+        🔹 Walmart Data Analysis
+    </a>
 
-        <div class="card">
-            <h3>Walmart Data Analysis</h3>
-            <p>Analyzed Walmart dataset using Python, SQL, Excel, and Power BI to find business insights.</p>
-            <a href="https://github.com/salonis30/walmart" target="_blank">View Project →</a>
-        </div>
+</div>
 
-    </div>
-</section>
-
-<section>
+<div class="section">
     <h2>Skills</h2>
     <p>
-        Python, SQL, Pandas, NumPy, Machine Learning, Data Visualization, Power BI, Excel, Database Management
+        Python, SQL, Pandas, NumPy, Machine Learning, Data Visualization, Streamlit, Power BI, Excel
     </p>
-</section>
-
-<section>
-    <h2>Contact</h2>
-    <p>Email: saloni30.work@gmail.com</p>
-    <p>India: +91 8000134845</p>
-    <p>Italy: +39 3933824256</p>
-</section>
+</div>
 
 <footer>
-    <p>© 2026 Saloni Sharma</p>
+    <p>📧 saloni30.work@gmail.com</p>
+    <p>📞 +39 3933824256</p>
 </footer>
 
 </body>
