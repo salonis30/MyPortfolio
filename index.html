@@ -5,37 +5,52 @@
     <title>Saloni Sharma | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
+    <!-- Fonts + Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7a4b62b0a4.js" crossorigin="anonymous"></script>
 
     <style>
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #F5F5DC, #81717A, #9D8CA1);
-            color: black;
         }
 
         header {
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
+            animation: fadeIn 1.5s ease;
         }
 
+        /* PERFECT CIRCLE IMAGE */
         img {
-            width: 150px;
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
             border-radius: 50%;
+            border: 4px solid white;
             margin-bottom: 15px;
         }
 
         h1 {
+            font-size: 34px;
             margin: 10px 0;
-            font-size: 32px;
         }
 
-        p {
-            max-width: 700px;
-            margin: auto;
-            font-size: 16px;
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 18px;
+            background: #81717A;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #6d5d66;
+            transform: scale(1.05);
         }
 
         .section {
@@ -43,35 +58,59 @@
             margin: 30px;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            animation: fadeUp 1.2s ease;
         }
 
-        .projects a {
-            display: block;
-            margin: 10px 0;
+        /* PROJECT CARDS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card a {
+            text-decoration: none;
             color: #81717A;
             font-weight: bold;
-            text-decoration: none;
         }
 
-        .projects a:hover {
-            text-decoration: underline;
+        .icons a {
+            font-size: 28px;
+            margin: 10px;
+            color: #81717A;
+            transition: 0.3s;
         }
 
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background: #81717A;
-            color: white;
-            border-radius: 6px;
-            text-decoration: none;
+        .icons a:hover {
+            color: #000;
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            font-size: 14px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes fadeUp {
+            from {opacity: 0; transform: translateY(30px);}
+            to {opacity: 1; transform: translateY(0);}
         }
     </style>
 </head>
@@ -83,37 +122,53 @@
     <h1>Saloni Sharma</h1>
     <p>Data Analyst & Machine Learning Enthusiast</p>
 
-    <a class="btn" href="https://www.linkedin.com/in/saloni-sharma-27534b257" target="_blank">
-        🔗 LinkedIn Profile
-    </a>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/saloni-sharma-27534b257" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+
+    <a class="btn" href="resume.pdf" download>📄 Download Resume</a>
 </header>
 
 <div class="section">
     <h2>About Me</h2>
     <p>
-        I am a Data Analyst and Machine Learning enthusiast with hands-on experience in working with real-world datasets. 
-        I enjoy analyzing data, building predictive models, and creating interactive dashboards using Python and tools like Pandas, NumPy, and Streamlit.
+        I am a Data Analyst and Machine Learning enthusiast skilled in analyzing real-world datasets, 
+        building predictive models, and creating interactive dashboards using Python, Pandas, NumPy, and Streamlit.
 
-        I completed a Data Analyst Internship at Grras Solutions Pvt Ltd (June 2024 – September 2024), 
-        where I performed exploratory data analysis, created visualizations, and collaborated with teams.
+        I completed my internship at Grras Solutions where I worked on data visualization and analysis.
 
-        I have worked on projects such as Walmart Data Analysis and Petroleum Production Prediction using multiple ML models.
-
-        I am actively looking for opportunities in Europe to grow in the field of Data Science and Machine Learning.
+        I am actively looking for opportunities in Europe in Data Science and Machine Learning roles.
     </p>
 </div>
 
-<div class="section projects">
+<div class="section">
     <h2>Projects</h2>
 
-    <a href="https://github.com/salonis30/PredictingPetroleumAndGasProduction" target="_blank">
-        🔹 Petroleum Production Prediction
-    </a>
+    <div class="projects">
 
-    <a href="https://github.com/salonis30/walmart" target="_blank">
-        🔹 Walmart Data Analysis
-    </a>
+        <div class="card">
+            <a href="https://github.com/salonis30/PredictingPetroleumAndGasProduction" target="_blank">
+                Petroleum Production Prediction
+            </a>
+            <p>
+                Built ML models like Linear Regression, Random Forest, and XGBoost to predict petroleum production. 
+                Created visual dashboards and compared model performance.
+            </p>
+        </div>
 
+        <div class="card">
+            <a href="https://github.com/salonis30/walmart" target="_blank">
+                Walmart Data Analysis
+            </a>
+            <p>
+                Performed exploratory data analysis on Walmart dataset using Python. 
+                Generated insights and visualizations for business decision-making.
+            </p>
+        </div>
+
+    </div>
 </div>
 
 <div class="section">
@@ -123,9 +178,15 @@
     </p>
 </div>
 
+<div class="section">
+    <h2>Contact</h2>
+    <p>📧 Email: saloni30.work@gmail.com</p>
+    <p>📞 India: +91 8000134845</p>
+    <p>📞 Italy: +39 3933824256</p>
+</div>
+
 <footer>
-    <p>📧 saloni30.work@gmail.com</p>
-    <p>📞 +39 3933824256</p>
+    <p>© 2026 Saloni Sharma</p>
 </footer>
 
 </body>
